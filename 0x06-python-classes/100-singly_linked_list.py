@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-""" A class that defines a node of a singly linked list"""
 class Node:
     """ A class that defines a node of a singly linked list"""
     def __init__(self, data, next_node=None):
@@ -21,12 +20,12 @@ class Node:
 
     @property
     def next_node(self):
-	"""Mothod to initiate next node data"""
+        """Mothod to initiate next node data"""
         return self.__next_node
 
     @next_node.setter
     def next_node(self, value):
-	"""Mothod to set next node data"""
+        """Mothod to set next node data"""
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
@@ -35,7 +34,7 @@ class Node:
 class SinglyLinkedList:
     """ A class that defines a singly linked list"""
     def __str__(self):
-	"""Structure to define the linked list"""
+        """Structure to define the linked list"""
         rtn = ""
         ptr = self.__head
 
@@ -48,11 +47,11 @@ class SinglyLinkedList:
         return rtn
 
     def __init__(self):
-	"""Mothod to initialize the single list"""
+        """Mothod to initialize the single list"""
         self.__head = None
 
     def sorted_insert(self, value):
-	"""Method to insert the node"""
+        """Method to insert the node"""
         ptr = self.__head
 
         while ptr is not None:
