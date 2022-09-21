@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+class Error(Exception):
+    """Base class for other exceptions"""
+    pass
+
+
 class ValueTooFar(Error):
     """Raised when the input value is too large"""
     pass
