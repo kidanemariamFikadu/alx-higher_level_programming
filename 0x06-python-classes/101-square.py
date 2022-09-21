@@ -13,7 +13,7 @@ class Square:
 
         for i in range(0, self.size):
             for k in range(self.position[0]):
-                rtn += " "
+                rtn += "_"
             for j in range(self.size):
                 rtn += "#"
             if i is not (self.size - 1):
