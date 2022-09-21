@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+class ValueTooFar(Error):
+    """Raised when the input value is too large"""
+    pass
+
+
 def magic_calculation(a, b):
     result = 0
     for i in range(1, 3):
@@ -7,7 +12,7 @@ def magic_calculation(a, b):
                 raise Exception("Too far")
             else:
                 result += (a ** b) / i
-        except:
+        except ValueTooFar:
             result = b + a
             break
     return (result)
