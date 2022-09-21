@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Module sqaure will define class Sqaure"""
+
+
 class Square:
     """Class Square that defines a square object"""
     def __init__(self, size):
