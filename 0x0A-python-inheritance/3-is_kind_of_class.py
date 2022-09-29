@@ -1,16 +1,20 @@
 #!/usr/bin/python3
-"""check same class method"""
+"""
+This module implements a function that returns True
+if the object is an instance of, or if the object is
+an instance of a class that inherited from, the specified
+class; otherwise False.
+"""
 
 
-def is_same_class(obj, a_class):
-    """ Function that returns True/False if obj is a type of a_class
+def is_kind_of_class(obj, a_class):
+    """implementation
 
     Args:
-        obj: object
-        a_class: class type
+        obj (Any): object to check
+        a_class (type): type to check against
 
     Returns:
-        True if type of obj is a_class
-        False, otherwise
+        boolean: response
     """
-    return type(obj) is a_class
+    return isinstance(obj, a_class)
